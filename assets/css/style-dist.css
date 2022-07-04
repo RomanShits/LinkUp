@@ -1,0 +1,794 @@
+*, *::before, ::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/*body*/
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  border-radius: 0px;
+  color: #FFFFFF;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1920px;
+  max-height: 100vh;
+  margin-bottom: -2px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #16181D;
+}
+
+/* Header */
+.header_text {
+  max-width: 864px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.logo_text {
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.login {
+  margin-left: 200px;
+  margin-right: 200px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  padding: 11px 34px 11px 24px;
+}
+
+.main {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #16181D;
+}
+
+.main_info {
+  margin-left: 210px;
+  margin-top: 150px;
+  margin-bottom: 277px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+.button_hero {
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  position: relative;
+  margin-right: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 11px 34px 11px 24px;
+  display: inline-flex;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/Vector.svg);
+  background-repeat: no-repeat;
+  height: 20px;
+  max-height: 100%;
+  width: 20px;
+  max-width: 100%;
+  right: 5px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.btn:hover {
+  background: #00AD6F;
+  transition: 0.4s all ease;
+  display: inline-flex;
+  gap: 7px;
+}
+.btn:hover svg {
+  transform: translate(10px, 10px);
+}
+.btn:hover:before {
+  transform: rotate(225deg);
+  transform-origin: 25% 10%;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 44px;
+  margin-bottom: 30px;
+}
+
+.vector_icon {
+  margin-left: 10px;
+}
+
+.phone_img {
+  max-width: 600px;
+  max-height: 700px;
+  width: 100%;
+  height: 100%;
+}
+
+/* cashflowapp */
+.cashflowapp {
+  width: 100%;
+  max-width: 1920px;
+  max-height: 1080px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone_app_img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.h11 {
+  color: #16181D;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 134%;
+  margin-bottom: 30px;
+}
+
+.pp {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 200%;
+  color: #708599;
+}
+
+.btn_white_part {
+  margin-top: 30px;
+  position: relative;
+  margin-right: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  background: #16181D;
+  padding: 11px 34px 11px 24px;
+  display: inline-flex;
+}
+.btn_white_part:before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/Vector.svg);
+  background-repeat: no-repeat;
+  height: 20px;
+  max-height: 100%;
+  width: 20px;
+  max-width: 100%;
+  right: 5px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.btn_white_part:hover {
+  background: #00AD6F;
+  transition: 0.4s all ease;
+  display: inline-flex;
+  gap: 7px;
+}
+.btn_white_part:hover svg {
+  transform: translate(10px, 10px);
+}
+.btn_white_part:hover:before {
+  transform: rotate(225deg);
+  transform-origin: 25% 10%;
+}
+
+/* Multi-Chain */
+.multi_title {
+  max-width: 1000px;
+  max-height: 350px;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  display: inline-grid;
+}
+
+.multi_chain {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10fr;
+  grid-template-areas: " multi_title" "multi_list_of_chain";
+}
+
+.multi_list_of_chain {
+  display: flex;
+  justify-content: center;
+}
+
+.multi_list_img {
+  max-width: 245px;
+  max-height: 243px;
+  width: 100%;
+  height: 100%;
+}
+
+.multi_top {
+  color: #16181D;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 134%;
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+.multi_botomn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 200%;
+  color: #708599;
+  text-align: center;
+}
+
+/* debit_card_part */
+.debit_card_part {
+  height: 100vh;
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+.debit_card_part_text {
+  position: absolute;
+  color: #ffffff;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  margin-top: 250px;
+  margin-left: 110px;
+}
+
+.hand_img {
+  width: 1764px;
+  height: 2396px;
+  width: 100%;
+  height: 100%;
+}
+
+.debit_h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 134%;
+  margin-bottom: 20px;
+}
+
+.debit_p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 200%;
+}
+
+/* app store */
+.app_store {
+  height: 100vh;
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+.app_plus_storebtn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 134%;
+  color: #16181D;
+  align-items: center;
+  height: 70%;
+  width: 70%;
+  max-width: 1073px;
+  max-height: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.text_app {
+  margin-bottom: 20px;
+}
+
+.colortext {
+  color: #00AD6F;
+}
+
+.instruction_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instruction {
+  font-family: "Poppins";
+  color: #708599;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.text_instruction {
+  margin-left: 46px;
+}
+
+.top_instruction {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+  color: #16181D;
+}
+
+.botomn_instruction {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  color: #708599;
+}
+
+.phone_appstore {
+  position: relative;
+  max-width: 790px;
+  max-height: 906px;
+  margin-top: -50px;
+  margin-left: -200px;
+}
+
+.number_img {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.btn_store {
+  width: 200px;
+  height: 56px;
+}
+
+/* footer */
+.footer {
+  max-width: 1920px;
+  width: 100%;
+  height: 688px;
+  background: #050607;
+}
+
+.mail {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 210px;
+  padding-top: 200px;
+}
+
+.mail_text {
+  color: #FFFFFF;
+}
+
+.mail_main {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.mail_botom {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 134%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.footer_icon {
+  padding-left: 20px;
+}
+
+.footer_line {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin-top: 50px;
+}
+
+.terms {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-top: 150px;
+}
+
+.terms_text {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.terms_buton_text {
+  padding-right: 30px;
+}
+
+/* meda */
+@media screen and (min-width: 1920px) {
+  .app_plus_storebtn {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1635px) {
+  .phone_img {
+    margin-bottom: -44px;
+  }
+
+  .multi_top {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .h1 {
+    font-size: 20px;
+    line-height: 60px;
+  }
+
+  .logo {
+    padding: 0 0;
+    margin-left: 30px;
+  }
+
+  .login {
+    padding: 0 0;
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+
+  .phone_img {
+    max-width: 400px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+  }
+
+  .main_info {
+    margin-left: 50px;
+  }
+
+  .debit_card_part_text {
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .instruction {
+    margin-left: 50px;
+  }
+
+  .phone_app_img {
+    max-width: 50%;
+  }
+
+  .pp {
+    font-size: 18px;
+    line-height: 200%;
+    margin-right: 20px;
+  }
+
+  .mail {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .mail_botom {
+    font-size: 20px;
+    line-height: 200%;
+    margin-right: 20px;
+  }
+
+  .terms {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .btn_store {
+    width: 150px;
+    height: 36px;
+  }
+
+  .terms_buton_text {
+    font-size: 12PX;
+  }
+
+  .multi_list_img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .multi_botomn {
+    font-size: 18px;
+  }
+
+  .debit_p {
+    font-size: 18px;
+  }
+
+  .debit_h1 {
+    font-size: 30px;
+  }
+
+  .phone_appstore {
+    max-width: 590px;
+    max-height: 706px;
+    margin-top: 0px;
+  }
+
+  .numberr_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .number_img {
+    margin-bottom: 10px;
+  }
+
+  .text_instruction {
+    margin-left: 15px;
+  }
+
+  .text_app {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .footer {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .multi_list_img {
+    max-width: 140px;
+    max-height: 140px;
+  }
+
+  .multi_botomn {
+    font-size: 15px;
+  }
+
+  .multi_top {
+    font-size: 22px;
+  }
+
+  .mt {
+    display: none;
+  }
+
+  .main_info {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .hero {
+    margin-bottom: -22px;
+  }
+
+  .header_text {
+    max-width: 750px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .h1 {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .button_hero {
+    display: block;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+    margin-right: 0;
+    display: block;
+  }
+
+  .button {
+    position: relative;
+    display: block;
+  }
+
+  .phone_img {
+    max-width: none;
+    margin-bottom: -5px;
+    max-height: none;
+  }
+
+  .cashflowapp {
+    display: flex;
+    flex-flow: wrap;
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .text_cashflowap {
+    order: 0;
+  }
+
+  .phone_app_img {
+    order: 1;
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .text_cashflowap {
+    text-align: center;
+  }
+
+  .multi_title {
+    margin: 0 0;
+    padding: 0 0;
+    height: 150px;
+  }
+
+  .multi_list_of_chain {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .multi_chain {
+    height: 70vh;
+  }
+
+  .multi_title {
+    display: block;
+  }
+
+  .instruction_main {
+    display: block;
+  }
+
+  .phone_appstore {
+    margin-top: -30px;
+    margin-left: -30px;
+    max-width: 490px;
+    max-height: 606px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .debit_card_part_text {
+    padding: 20px 5px;
+    margin: 0 0 0 0;
+    text-align: center;
+    color: #050607;
+    width: 1764px;
+    height: 2396px;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+  }
+
+  .debit_h1 {
+    padding: 5px 5px;
+    margin: 0 0 0 0;
+    font-size: 12px;
+    justify-content: center;
+  }
+
+  .debit_p {
+    font-size: 10px;
+  }
+
+  .instruction {
+    margin-left: 20px;
+  }
+
+  .instruction_main {
+    display: inline-block;
+  }
+
+  .mail {
+    display: block;
+  }
+
+  .icon {
+    margin-top: 20px;
+  }
+
+  .terms {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .terms_text {
+    display: inline-block;
+  }
+
+  .terms_buton_text {
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 396px) {
+  .multi_list_img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .phone_appstore {
+    max-width: 390px;
+    max-height: 506px;
+    width: 100%;
+    height: 100%;
+    margin-left: -30px;
+  }
+}
